@@ -104,15 +104,12 @@ the magnifying glass icon in the upper-right corner or pressing CTRL+K and
 then V. This kind of button combination is called a chord, for whatever
 reason -->
 
-I know that I want to be some kind of engineer, software, systems, embedded systems. I'm willing to try it all because
-I'm really not set on one path. I'm more focused on swe but, I could end up not really liking it, and I could end up
-liking somethiing else much more. I do think I want to be a swe though because I enjoy coding and working on projects, they can
-be kind of hard to start on your own (so thank you for this!). Some of my hobbies include, baking, reading, taking care of my orchid
-hanging with friends, going to cute cafes.
+    I know that I want to be some kind of engineer, software, systems, embedded systems. I'm willing to try it all because
+    I'm really not set on one path. I'm more focused on swe but I could end up liking somethiing else much more. I do think I want to be a swe though
+    because I enjoy coding and working on projects, which can be kind of hard to start on your own (so thank you for this!).
+    Some of my hobbies include, baking, reading, taking care of my orchid hanging with friends, going to cute cafes and watching anime (I think you would like Sakamoto Days, highly reccomend!).
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -120,7 +117,6 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -129,8 +125,6 @@ etc. Make of this whatever seems interesting to you, and keep in mind that
 you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -198,68 +192,86 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Clothing Closet
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    The purpose of this component is to model a closet for clothing. I'm thinking an
+    organizational sort of structure to keep track of different items somebody has. Might
+    include a customizational/generate outfit functionality, not sure yet.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - addPiece() -  adds an article of clothing or accessory to the closet
+    - removePiece() - removes an article of clothing or accessory to the closet
+    - clothingnumber() - returns the exact number of items in the closet
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - discardPiece() - deletes an article of clothing or accessory from inventory
+    - toDonate() - marks clothes as "needs to donate" (maybe donation location reccomendation?)
+    - toSell() - marks clothes as "potential profit" (maybe estimated profit to be made?)
+    (I'm not sure if these are good, apologies if they are bad)
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Music Playlist
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    A music playlist component for tracking songs that somebody want's to save.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - addSong() - adds a song to the playlist
+    - removeSong() - removes a song from the playlist
+    - playlistSize() - returns the size of playlist
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - genresorting() - sorts by genre
+    - shuffle() - shuffles playlist
+    - reccomend() - reccomends a similiar song
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: Library
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - A component for storing different books, including author information, genre
+      maybe organized by the Dewy Decimal System.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - addBook() - adds book to shelf/library
+    - removeBook() - remove book from shelf/library
+    - find(String) - finds the book in the library
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - author() - obtains the author of the book
+    - readingQueue() - obtains estimated time to read book
+    - summary() - gives a summary of the book/key findings
+    - reflection() - someone can write their own reflection of the book
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I don't know
+
 
 ## Post-Assignment
 
@@ -307,8 +319,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
-
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
 this [Markdown to PDF guide][markdown-to-pdf-guide]. However, PDFs should be
@@ -317,11 +327,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
