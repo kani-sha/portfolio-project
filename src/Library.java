@@ -9,7 +9,7 @@ import components.queue.Queue1L;
 public interface Library<T> extends Queue1L<T> {
 
     /**
-     * The queue of books in the library.
+     * Private members ----------------------------------------
      */
     private Queue1L<T> books;
     private String author;
@@ -29,7 +29,7 @@ public interface Library<T> extends Queue1L<T> {
     }
 
     /*
-     * Kernel methods --------------------------------------------
+     * Kernel methods -----------------------------------------
      */
 
     /**
@@ -70,7 +70,7 @@ public interface Library<T> extends Queue1L<T> {
     }
 
     /*
-     * Secondary methods --------------------------------------------
+     * Secondary methods ---------------------------------------
      */
 
     /**

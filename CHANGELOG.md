@@ -13,3 +13,8 @@ the following form: YYYY.0M.0D.
 - Designed a Closet component
 - Designed a Music Playlist component
 - Designed a Library component
+- Designed a proof of concept for Library component
+
+
+### Updated
+- Changed design to include the starting private methods, contructor, and methods.
