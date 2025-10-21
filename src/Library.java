@@ -1,71 +1,146 @@
-import components.queue.Queue1L;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * Represents a simple library component.
  *
- * @param <T>
- *            the type of elements in this library
  */
-public interface Library<T> extends Queue1L<T> {
+class Book {
 
-    /**
-     * Private members ----------------------------------------
-     */
-    private Queue1L<T> books;
+    private String title;
     private String author;
-    private int estimatedTime;
-    private String reflection;
+    private String estimatedTime;
+    private int pages;
+    private double rating;
+    private int pagesRead;
 
     /*
      * Constructor --------------------------------------------
      */
 
-    /**
-     * No-argument constructor.
-     */
-    private void createNewLibrary() {
-        this.books = new Queue1L<T>();
-
+    public Book(String title, String author, String estimatedTime, int pages,
+            double rating, int pagesRead) {
+        this.title = title;
+        this.author = author;
+        this.estimatedTime = estimatedTime;
+        this.pages = pages;
+        this.rating = rating;
+        this.pagesRead = 0;
     }
+
+    /*
+     * Getters & Setters --------------------------------------
+     */
+    public String getTitle() {
+        return this.title;
+    }
+
+    public String getAuthor() {
+        return this.author;
+    }
+
+    public String getEstimatedTime() {
+        return this.estimatedTime;
+    }
+
+    public int getPages() {
+        return this.pages;
+    }
+
+    public double getRating() {
+        return this.rating;
+    }
+
+    public int getPagesRead() {
+        return this.pagesRead;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setEstimatedTime(String estimatedTime) {
+        this.estimatedTime = estimatedTime;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public void setPagesRead(int pagesRead) {
+        this.pagesRead = pagesRead;
+    }
+
+}
+
+/**
+ * Represents the library that manages a collection of Book objects.
+ */
+public class Library {
+
+    /**
+     * The collection of books in the library.
+     */
+    private List<Book> books = new ArrayList<>();
 
     /*
      * Kernel methods -----------------------------------------
      */
 
     /**
-    * Adds a book to the library.
-    *
-    * @param book the book being added to the library
-    */
-    public void addBook(T book) {
-        this.books.enqueue(book);
+     * Adds a book to the library.
+     *
+     * @param book
+     *            the book being added to the library
+     */
+    public void addBook(Book book) {
+        this.books.add(book);
     }
 
     /**
-    * Removes a book from the library.
-    *
-    */
-    public void removeBook() {
-        String book = "";
-        book = this.books.dequeue();
-        return book;
+     * Removes a book from the library.
+     *
+     * @param title
+     *            the title of the book being removed from the library
+     */
+    public void removeBook(String title) {
+        for (int i = 0; i < this.books.size(); i++) {
+            Book book = this.books.get(i);
+            if (book.getTitle().equals(title)) {
+                this.books.remove(i);
+            }
+        }
     }
 
     /**
-    * Finds a book in the library.
-    *
-    * @param book the book being searched for in the library
-    */
-    public void findBook(T book) {
-        Queue1L<T> tempQueue = new Queue1L<T>();
+     * Finds a book in the library.
+     *
+     * @param title
+     *            the title of the book being searched for
+     */
+    public void findBook(String title) {
         boolean found = false;
-
-        while (!this.books.isEmpty()) {
-            T currentBook = this.books.dequeue();
-            if (currentBook.equals(book)) {
+        for (int i = 0; i < this.books.size(); i++) {
+            Book book = this.books.get(i);
+            if (book.getTitle().equals(title)) {
+                System.out.println("This book is in your library: "
+                        + this.books.get(i).getTitle());
                 found = true;
             }
-            tempQueue.enqueue(currentBook);
+        }
+
+        if (!found) {
+            System.out.println("This book is not in your library.");
         }
     }
 
@@ -74,35 +149,40 @@ public interface Library<T> extends Queue1L<T> {
      */
 
     /**
-    * Finds the author of the book.
-    *
-    */
-    public void author() {
-        return this.author;
-    }
-
-    /**
-    * Gets the estimated time to complete the book.
-    */
-    public void estimatedTime() {
-        return this.estimatedTime;
-    }
-
-    /**
-    * Allows the reader to write a reflection on the book.
-    */
-    public void reflection() {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Write your reflection here: ");
-        String ref = input.nextLine();
-        System.out.println("Save yout reflection? (Y/N)");
-        String ans = input.nextLine();
-
-        if (ans.equals("Y")) {
-            this.reflection = System.in;
-        } else {
-            System.out.println("Reflection not saved.");
+     * Returns the ranking of the book based on user ratings.
+     *
+     */
+    public void bookRanking() {
+        Collections.sort(this.books,
+                Comparator.comparingDouble(Book::getRating).reversed());
+        for (int i = 0; i < this.books.size(); i++) {
+            String title = this.books.get(i).getTitle();
+            double rating = this.books.get(i).getRating();
+            if (rating >= 4.5) {
+                System.out.println(title + " - Excellent");
+            } else if (rating >= 3.5) {
+                System.out.println(title + " - Good");
+            } else if (rating >= 2.5) {
+                System.out.println(title + " - Average");
+            } else {
+                System.out.println(title + " - Poor");
+            }
         }
+    }
+
+    /**
+     * Tracks reading progress of a book.
+     *
+     * @param book
+     *            the book being tracked
+     * @param pagesRead
+     *            the number of pages read so far
+     */
+    public void readingProgress(Book book, int pagesRead) {
+        book.setPagesRead(pagesRead);
+        double progress = ((double) pagesRead / book.getPages()) * 100;
+        System.out.printf("You have read %.2f%% of %s.%n", progress,
+                book.getTitle());
     }
 
     /**
@@ -113,6 +193,20 @@ public interface Library<T> extends Queue1L<T> {
      */
     public static void main(String[] args) {
         System.out.println("Welcome to the Library Component!");
+        Library library = new Library();
+        Book b1 = new Book("Motherthing", "Ainslie Hogarth", "5 hours", 288,
+                4.5, 30);
+        Book b2 = new Book("Watchmen", "Alan Moore", "6 hours", 448, 4.8, 100);
+        Book b3 = new Book("1984", "George Orwell", "4 hours", 330, 4.2, 50);
+        library.addBook(b1);
+        library.addBook(b2);
+        library.addBook(b3);
+
+        library.findBook("1984");
+
+        library.bookRanking();
+
+        library.readingProgress(b1, 30);
 
     }
 }

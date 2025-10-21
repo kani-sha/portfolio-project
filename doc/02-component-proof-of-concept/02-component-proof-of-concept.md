@@ -108,12 +108,12 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-<!-- TODO: briefly argue your choice of design or design something
-new; then delete this comment -->
-
-I think I will choose to go with the Library Component. Mainly, because it suites my own interests and
-I think it's a feasible project to complete within the time frame we have. I think it's a good balance of
-implementing something that exercises my skills and something I'm interested in.
+   I think I will choose to go with the Library component that I started brainstorming. Mainly because it suites my own interests and
+   I think it's a feasible project to complete within the time frame we have to complete the project. The closet
+   component felt like a neat idea, but I think it lacked a little bit of challenge that I wanted the project to have.
+   With this library compenent I think I'll be able todo and look more into things related to books over clothing.
+   The same goes with the music playlist, I feel that doing the library component requires more reasearch. I am open to the fact that I
+   may be wrong about both, but that's okay. Overall, I think it's a good balance of implementing something that exercises my skills and something I'm interested in.
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my

@@ -24,3 +24,10 @@ the following form: YYYY.0M.0D.
 ### Fixed
 - Updated closet components to methods that make more sense and don't rely on the kernel methods.
 - Updated library component to methods that make more sense and don't rely on the kernel methods.
+
+## 2025.10.20
+
+### Fixed
+- Updated justification for choosing library component over others.
+- Changed the library component to use Java conventions for accessing class members.
+- Updated main method to display method functionality.
