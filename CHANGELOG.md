@@ -18,3 +18,9 @@ the following form: YYYY.0M.0D.
 
 ### Updated
 - Changed design to include the starting private methods, contructor, and methods.
+
+## 2025.10.20
+
+### Fixed
+- Updated closet components to methods that make more sense and don't rely on the kernel methods.
+- Updated library component to methods that make more sense and don't rely on the kernel methods.
