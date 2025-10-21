@@ -202,10 +202,9 @@ will likely refine your design to make your implementation easier to use.
     - removePiece() - removes an article of clothing or accessory to the closet
     - clothingnumber() - returns the exact number of items in the closet
   - **Secondary Methods**:
-    - discardPiece() - deletes an article of clothing or accessory from inventory
-    - toDonate() - marks clothes as "needs to donate" (maybe donation location reccomendation?)
-    - toSell() - marks clothes as "potential profit" (maybe estimated profit to be made?)
-    (I'm not sure if these are good, apologies if they are bad)
+    - randomOutfit() -  generates a random outfit from available clothes
+    - sortByOccasion() - sorts clothes by occasion (casual, formal, work, etc)
+    - laundryList() - generates a list of clothes that need to be washed
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
@@ -254,10 +253,10 @@ will likely refine your design to make your implementation easier to use.
     - removeBook() - remove book from shelf/library
     - find(String) - finds the book in the library
   - **Secondary Methods**:
-    - author() - obtains the author of the book
-    - readingQueue() - obtains estimated time to read book
-    - summary() - gives a summary of the book/key findings
-    - reflection() - someone can write their own reflection of the book
+    - bookRanking() - ranks books based on user ratings
+    - estimateReadingTime() - estimates reading time based on number of pages
+    - readingProgress() - tracks reading progress of a book
+    - listByGenre() - lists books by genre
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
@@ -279,8 +278,6 @@ The following sections detail everything that you should do once you've
 completed the assignment.
 
 ### Changelog
-
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.

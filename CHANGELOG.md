@@ -13,3 +13,21 @@ the following form: YYYY.0M.0D.
 - Designed a Closet component
 - Designed a Music Playlist component
 - Designed a Library component
+- Designed a proof of concept for Library component
+
+
+### Updated
+- Changed design to include the starting private methods, contructor, and methods.
+
+## 2025.10.20
+
+### Fixed
+- Updated closet components to methods that make more sense and don't rely on the kernel methods.
+- Updated library component to methods that make more sense and don't rely on the kernel methods.
+
+## 2025.10.20
+
+### Fixed
+- Updated justification for choosing library component over others.
+- Changed the library component to use Java conventions for accessing class members.
+- Updated main method to display method functionality.
