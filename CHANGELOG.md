@@ -13,3 +13,11 @@ the following form: YYYY.0M.0D.
 - Designed a Closet component
 - Designed a Music Playlist component
 - Designed a Library component
+
+## 2025.11.29
+
+### Updated
+
+- Updated LibraryKernel for secondary method implementation
+- Added secondary methods implementation to LibrarySecondary
+- Added toString and equals to LibrarySecondary
