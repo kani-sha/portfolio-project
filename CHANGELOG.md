@@ -13,3 +13,11 @@ the following form: YYYY.0M.0D.
 - Designed a Closet component
 - Designed a Music Playlist component
 - Designed a Library component
+
+###
+
+### 2025.10.04
+
+### Changed
+
+- Implemted Library Secondary methods
