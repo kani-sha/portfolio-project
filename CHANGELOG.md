@@ -12,4 +12,14 @@ the following form: YYYY.0M.0D.
 
 - Designed a Closet component
 - Designed a Music Playlist component
+<<<<<<< Updated upstream
 - Designed a Library component
+=======
+- Designed a Library component
+
+## 2025.11.29
+
+### Updated
+
+- Completed the kernel implementation for the Library Kernel
+
