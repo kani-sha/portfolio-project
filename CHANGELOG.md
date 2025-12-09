@@ -13,3 +13,11 @@ the following form: YYYY.0M.0D.
 - Designed a Closet component
 - Designed a Music Playlist component
 - Designed a Library component
+
+### Changed
+
+- Completed Library component finishing touches
+- Completed tests for Library component
+- Completed demos for Library component
+- Completed documentation for Library component
+- Wrote reflection of the entire project

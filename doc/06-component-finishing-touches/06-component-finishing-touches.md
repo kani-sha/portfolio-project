@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Kanisha Thambyrajah
+- **Dot Number**: thambyrajah.1
+- **Due Date**:  12/10 @ 11:59 PM
 
 ## Assignment Overview
 
@@ -50,7 +50,6 @@ course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -133,7 +132,7 @@ your changes.
 **Note**: because you may have changes still sitting in a pull request,
 you'll want to make this new branch directly from main. This may seem weird
 because you won't be able to see the other parts (e.g., your proof of concept)
-in VSCode. This is okay as parts 1-5 can be executed in isolation and merged
+in VSCode. This is okay as p arts 1-5 can be executed in isolation and merged
 together later. However, this does mean that you may be waiting for a pull
 request to see if your different features fit together. Once the pull request
 merges, you will need to pull the changes from main into your current branch
@@ -141,7 +140,6 @@ to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +305,26 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think I understand software development a bit better now that the beginning of the course.
+Going through the entire process of designing interfaces, abstract classes, and kernel implementations
+helped me understand how software development works in the real world. It showed me the importance of planning and designing before jumping into coding.
+I also understand better how interface and classes are connected to each other and how they depend on each other.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Yes, I had gaps in understanding how different interfaces and classes were dependent
+on eachother, I knew that they were connected but I didn't understand how they were connected.
+I addressed this by going back to the earlier parts of the portfolio project and reviewing
+the lecture notes discussed in class and applying them to my own project.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Software development has always been something I enjoy, especially in this case because this project is something
+I do see myself using to keep track of my personal library. I don't think that enjoyment has dwindled over
+the course of the project, if anything I think I've grown to enjoy it more as I understand the process better.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,25 +332,46 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I picked up the skill of deeper learning. It wasn't that I just learned about interfaces and abstract classes, but I had to understand how they worked together
+and how to design them effectively. I think the project reinforced my understanding of these concepts and helped me see how they fit into the bigger picture.
+I also learned how to take an idea I have in my head and turn it into a working software component. It helped that this project was
+broken down into smaller parts, and I now know that if I ever want to create something on my own, the best thing I
+can do it just get started, and from there, go one step at a time.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Gained hands-on experience designing and implementing interfaces and abstract classes to work cohesively within a software system
+
+- Strengthened software design skills by connecting theoretical concepts to practical, real-world applications
+
+- Transformed initial ideas into fully functioning software components through iterative development
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+While I'd like to turn the library component into a full-fledged application (maybe I will on my own time), I don't think
+it would be something I do in a professional setting. Rather I'd build different applications for a company that is trying to meet
+a specific goal and meet certain objectives, that aspect of software development is something that can be taken from this project, and
+something that I continue to enjoy. Overall, the project has reinforced my interest in software development.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+Some things I could do is to just continue learning, learning about new concepts that interest me and ones that I think would
+be good for my career. I have a few people in my life that work in tech, that I can always lean on for advice, but beyond that
+I'm grateful to have gotten an internship this summer
+
+I think because software development is so broad, I just need to pick one thing to go into it,
+Long term I see myself getting into AI governance, making sure that it is producing ethical results.
+I don't think that discussion is something that is happening enough in the development of
+all these ai tools. People are fearful, but what are we doing about it? How can we ease the worries that AI will not
+spew harmful rhetoric? There are solutions, and these solutions are something I hope to be a part of.
+
+
 
 ### Changelog
 
